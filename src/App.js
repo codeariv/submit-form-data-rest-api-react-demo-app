@@ -12,6 +12,7 @@ function App() {
     try {
       let res = await fetch("https://httpbin.org/post", {
         method: "POST",
+         headers:{'Content-Type':'application/json'},
         body: JSON.stringify({
           name: name,
           email: email,
